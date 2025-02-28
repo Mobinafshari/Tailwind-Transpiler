@@ -79,7 +79,7 @@ async function processFolder(folderPath) {
 
   if (allClasses.size > 0) {
     fs.writeFileSync(
-      "output/extracted-tailwind-classes.json",
+      "output/extracted-classes.json",
       JSON.stringify([...allClasses], null, 2)
     );
     console.log(
