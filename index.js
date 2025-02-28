@@ -33,28 +33,36 @@ async function processFile(filePath) {
           });
         }
 
-        if (classValue.type === "JSXExpressionContainer") {
-          const expression = classValue.expression;
-          if (expression.type === "TemplateLiteral") {
-              console.log(expression)
-              expression.quasis.forEach((quasi) => {
-                  const dynamicClass = quasi.value.raw.trim();
-              if (/\[.*?\]/.test(dynamicClass)) {
-                customClasses.add(dynamicClass);
-                allClasses.add(dynamicClass);
-              }
-            });
+          if (classValue.type === "JSXExpressionContainer") {
+            const expression = classValue.expression;
+            if (expression.type === "TemplateLiteral") {
+              let fullClass = "";
+
+              expression.quasis.forEach((quasi, index) => {
+                fullClass += quasi.value.raw;
+                if (expression.expressions[index]) {
+                  fullClass += `[${expression.expressions[index].name}]`;
+                }
+              });
+
+              const classes = fullClass.split(/\s+/);
+              classes.forEach((cls) => {
+                if (/\[.*?\]/.test(cls)) {
+                  customClasses.add(cls);
+                  allClasses.add(cls);
+                }
+              });
+            }
           }
-        }
       }
     },
   });
 
-  if (customClasses.size > 0) {
-    console.log(`Extracted from ${filePath}:`, Array.from(customClasses));
-    const newCode = generator(ast).code; 
-    await fs.writeFile(filePath, newCode); 
-  }
+//   if (customClasses.size > 0) {
+//     console.log(`Extracted from ${filePath}:`, Array.from(customClasses));
+//     const newCode = generator(ast).code; 
+//     await fs.writeFile(filePath, newCode); 
+//   }
 }
 
 async function processFolder(folderPath) {

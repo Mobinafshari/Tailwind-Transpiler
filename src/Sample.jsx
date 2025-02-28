@@ -1,5 +1,7 @@
 function sample() {
   const width = 140;
-  return <div className={`h-[100px] w-[${width}px] bg-[#fff] `}>sample</div>;
+  return <div className={`h-[100px] w-[${width}px] bg-[#fff] `}>sample 
+  <p className="h-[100dvh]"></p>
+  </div>;
 }
 export default sample;
