@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-transpiler",
+  "version": "0.0.1",
+  "description": "A tool to parse and replace Tailwind CSS class names using AST.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Mobin Afshari",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/generator": "^7.26.9",
+    "@babel/parser": "^7.26.9",
+    "@babel/traverse": "^7.26.9",
+    "fs-extra": "^11.3.0",
+    "path": "^0.12.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4"
+  }
+}
