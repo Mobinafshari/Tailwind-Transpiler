@@ -57,12 +57,6 @@ async function processFile(filePath) {
       }
     },
   });
-
-//   if (customClasses.size > 0) {
-//     console.log(`Extracted from ${filePath}:`, Array.from(customClasses));
-//     const newCode = generator(ast).code; 
-//     await fs.writeFile(filePath, newCode); 
-//   }
 }
 
 async function processFolder(folderPath) {
@@ -83,7 +77,7 @@ async function processFolder(folderPath) {
       JSON.stringify([...allClasses], null, 2)
     );
     console.log(
-      "All custom classes saved to extracted-tailwind-classes.json"
+      "All custom classes saved to extracted-classes.json"
     );
   }
 }
