@@ -1,7 +1,8 @@
 [
+  "px-[100px]",
   "h-[100px]",
   "w-[[width]px]",
   "bg-[#fff]",
   "h-[100dvh]",
-  "px-[100px]"
+  "border-[100px]"
 ]
