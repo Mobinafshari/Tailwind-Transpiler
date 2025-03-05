@@ -1,6 +1,6 @@
 {
   "name": "tailwind-transpiler",
-  "version": "0.0.1",
+  "version": "0.0.15",
   "description": "A tool to parse and replace Tailwind CSS class names using AST.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -13,6 +13,12 @@
     "dist",
     "package.json",
     "README.md"
+  ],
+  "keywords": [
+    "tailwind",
+    "transpiler",
+    "extract-classes",
+    "custom-classes"
   ],
   "author": "Mobin Afshari",
   "license": "ISC",
