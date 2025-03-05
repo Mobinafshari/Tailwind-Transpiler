@@ -26,11 +26,7 @@ And then use it in your project scripts like this:
 npm run extract
 ```
 
-<p>Also, by default, it will process the
- 
-`src`
-
- folder, but you can specify a different folder like this:
+<p>Also, by default, it will process the<strong> src</strong> folder, but you can specify a different folder like this:
 </p>
 
 ```
