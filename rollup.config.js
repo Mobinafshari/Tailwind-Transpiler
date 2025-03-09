@@ -6,20 +6,20 @@ import json from "@rollup/plugin-json";
 const packageJson = require("./package.json");
 
 export default {
-  input: "index.js", 
+  input: "index.js",
   output: {
-    file: packageJson.main, 
-    format: "cjs", 
-    sourcemap: true, 
+    file: packageJson.main,
+    format: "cjs",
+    sourcemap: true,
   },
   plugins: [
-    resolve(), 
-    commonjs(), 
-     json(),
+    resolve(),
+    commonjs(),
+    json(),
     babel({
       babelHelpers: "bundled",
-      exclude: "node_modules/**", 
+      exclude: "node_modules/**",
     }),
-    terser(), 
+    terser(),
   ],
 };

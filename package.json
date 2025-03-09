@@ -1,16 +1,15 @@
 {
   "name": "tailwind-transpiler",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A tool to parse and replace Tailwind CSS class names using AST.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "node index.js",
     "build": "rollup -c --bundleConfigAsCjs"
   },
   "bin": {
-    "extract-classes": "dist/index.js"
+    "extract-classes": "./dist/index.js"
   },
   "files": [
     "dist",
