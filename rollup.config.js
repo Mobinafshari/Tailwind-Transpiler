@@ -20,6 +20,11 @@ export default {
       babelHelpers: "bundled",
       exclude: "node_modules/**",
     }),
-    terser(),
+    terser({
+      mangle: {
+        keep_fnames: true,
+        keep_classnames: true,
+      },
+    }),
   ],
 };
