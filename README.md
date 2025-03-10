@@ -38,7 +38,8 @@ npm run extract
 <p>
 Also you can see project in my github repositories:
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue)](https://github.com/Mobinafshari)
-
 
 </p>
+ <a style="margin-top: 10px;" target="_blank" href="https://github.com/Mobinafshari">
+		<img src="https://img.icons8.com/doodle/40/000000/github--v1.png"></a>
+	  <a href="mailto:afshari.mobin00@gmail.com" target="_blank" style="margin-left: 10px;">
