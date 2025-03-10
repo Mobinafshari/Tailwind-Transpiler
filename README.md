@@ -38,7 +38,7 @@ npm run extract
 <p>
 Also you can see project in my github repositories:
 
-[Mobin Afshari's GitHub](https://github.com/Mobinafshari)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue)](https://github.com/Mobinafshari)
 
 
 </p>
