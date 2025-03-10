@@ -4,7 +4,7 @@ Tiny transpiler to collect and put all custom tailwind classes into a file.
 <p>Use:
 
 ```
-npm i tailwind-transpiler
+npm i tailwind-transpiler -D
 ```
 
 to install the library </p>
@@ -34,3 +34,11 @@ npm run extract
     "extract": "extract-classes folder-you-want"
 }
 ```
+
+<p>
+Also you can see project in my github repositories:
+
+[Mobin Afshari's GitHub](https://github.com/Mobinafshari)
+
+
+</p>
