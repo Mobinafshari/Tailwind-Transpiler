@@ -36,6 +36,10 @@ npm run extract
 ```
 
 <p>
+It will generate custom classnames in output folder in the root directory and in <strong>extracted-classes.json</strong> file.
+</p>
+
+<p>
 Also you can see project in my github repositories:
 
 
